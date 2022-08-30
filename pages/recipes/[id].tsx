@@ -43,8 +43,8 @@ const RecipePage = ({ page }) => {
 			<h1>{page.name}</h1>
 			<Image src={page.img} width={300} height={300} className={styles.img} />
 			<ul>
-				{page.steps.map((step) => {
-					return <li>{step}</li>;
+				{page.steps.map((step, i) => {
+					return <li key={i + 1}>{step}</li>;
 				})}
 			</ul>
 		</main>
