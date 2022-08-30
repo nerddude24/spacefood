@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;1,600;1,700;1,800;1,300;1,400&display=swap");
 
 $white-1: #f8f9faff;
 $white-2: #e9ecefff;
@@ -12,13 +12,17 @@ $black-1: #212529ff;
 
 html,
 body {
-	padding: 0;
-	margin: 0;
+	background-color: $black-1;
 	font-family: --apple-system, "Merriweather", sans-serif;
+
+	height: 100%;
 }
 
 * {
+	font-family: --apple-system, "Merriweather", sans-serif;
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 nav {
@@ -28,10 +32,18 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	column-gap: 0.5rem;
 
 	background-color: $black-2;
 	box-shadow: 0 0 0.75rem 0.5rem rgba(0, 0, 0, 0.2);
+
+	.home-btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0.5rem;
+
+		text-decoration: none;
+	}
 
 	.nav-img {
 		filter: invert(90%);
@@ -46,16 +58,22 @@ nav {
 
 .content {
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 footer {
 	position: absolute;
-	width: 100%;
-	font-size: 0.5rem;
-	height: 1rem;
 	bottom: 0;
-	text-align: center;
-	background-color: $black-1;
+	width: 100%;
+	font-size: 1rem;
+	min-height: 5rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0 0 0.75rem 0.5rem rgba(0, 0, 0, 0.2);
+
+	background-color: $black-2;
 	color: $white-3;
 }
