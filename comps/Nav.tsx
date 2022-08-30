@@ -15,6 +15,13 @@ function Nav() {
 					<h1>SpaceFood</h1>
 				</a>
 			</Link>
+			<div>
+				<Link href="/recipes">
+					<a className="nav-item">
+						<h1>Recipes</h1>
+					</a>
+				</Link>
+			</div>
 		</nav>
 	);
 }
