@@ -21,7 +21,7 @@ $black-1: #212529ff;
 	border-radius: 15px 0;
 
 	.Image {
-		filter: grayscale(100%);
+		// filter: grayscale(100%);
 		border-radius: 15px 0;
 	}
 
@@ -46,7 +46,7 @@ $black-1: #212529ff;
 
 	.viewBtn {
 		font-size: 1rem;
-		color: $black-1;
+		color: red;
 	}
 
 	@media (max-width: 400px) {
