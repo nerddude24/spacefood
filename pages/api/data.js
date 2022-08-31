@@ -55,7 +55,6 @@ export default {
 				"pinch of salt",
 				"tsp vanilla extract",
 			],
-			vid: "ZtuPg2JIY1g",
 		},
 
 		{

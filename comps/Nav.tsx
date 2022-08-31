@@ -15,10 +15,15 @@ function Nav() {
 					<h1>SpaceFood</h1>
 				</a>
 			</Link>
-			<div>
+			<div className="nav-items">
 				<Link href="/recipes">
 					<a className="nav-item">
 						<h1>Recipes</h1>
+					</a>
+				</Link>
+				<Link href="/about">
+					<a className="nav-item">
+						<h1>About</h1>
 					</a>
 				</Link>
 			</div>

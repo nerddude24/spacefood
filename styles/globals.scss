@@ -37,7 +37,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 
-	background-color: $black-2;
+	background-color: $black-1;
 	box-shadow: 0 0 0.75rem 0.5rem rgba(0, 0, 0, 0.2);
 
 	.home-btn {
@@ -63,6 +63,11 @@ nav {
 		text-decoration: underline;
 		color: $white-1;
 	}
+
+	.nav-items {
+		display: flex;
+		column-gap: 0.5rem;
+	}
 }
 
 .content {
@@ -76,7 +81,7 @@ footer {
 	bottom: 0;
 	width: 100%;
 	font-size: 1rem;
-	min-height: 5rem;
+	min-height: 2rem;
 
 	display: flex;
 	justify-content: center;
@@ -84,6 +89,6 @@ footer {
 
 	box-shadow: 0 0 0.75rem 0.5rem rgba(0, 0, 0, 0.2);
 
-	background-color: $black-2;
+	background-color: $black-1;
 	color: $white-3;
 }

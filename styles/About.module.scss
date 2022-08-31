@@ -1,0 +1,25 @@
+$white-1: #f8f9faff;
+$white-2: #e9ecefff;
+$white-3: #dee2e6ff;
+$white-4: #ced4daff;
+$blue-grey: #adb5bdff;
+$black-4: #6c757dff;
+$black-3: #495057ff;
+$black-2: #343a40ff;
+$black-1: #212529ff;
+
+.about {
+	background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/space.jpg");
+	height: 100vh;
+	color: $white-1;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		margin-bottom: 1rem;
+	}
+}

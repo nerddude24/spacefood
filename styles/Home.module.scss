@@ -10,10 +10,10 @@ $black-1: #212529ff;
 
 .home {
 	.Banner {
-		background-color: $black-1;
+		background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/space.jpg");
+		height: 100vh;
 		color: $white-1;
 		width: 100%;
-		margin-top: 35vh;
 
 		display: flex;
 		flex-direction: column;
