@@ -41,7 +41,20 @@ const RecipePage = ({ page }) => {
 	return (
 		<main className={styles.Page}>
 			<h1>{page.name}</h1>
-			<Image src={page.img} width={300} height={300} className={styles.img} />
+			<div className={styles.visuals}>
+				<Image src={page.img} width={300} height={300} className={styles.img} />
+				{page.vid && (
+					<iframe
+						width="560"
+						height="315"
+						src={"https://www.youtube-nocookie.com/embed/" + page.vid}
+						title="YouTube video player"
+						frameBorder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen
+					/>
+				)}
+			</div>
 			<ul>
 				{page.steps.map((step, i) => {
 					return <li key={i + 1}>{step}</li>;

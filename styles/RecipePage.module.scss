@@ -16,11 +16,21 @@ $white-1: #f8f9faff;
 	}
 
 	ul {
+		align-self: flex-start;
 		line-height: 3rem;
+		margin-left: 5rem;
 		li {
 			font-size: 2rem;
 			font-weight: 300;
 		}
+	}
+
+	.visuals {
+		display: flex;
+		column-gap: 3rem;
+		row-gap: 3rem;
+		align-items: center;
+		justify-content: center;
 	}
 
 	@media (max-width: 530px) {
@@ -28,8 +38,23 @@ $white-1: #f8f9faff;
 			font-size: 3.5rem;
 			text-align: center;
 		}
-		ul > li {
-			font-size: 1.75rem;
+
+		ul {
+			margin-left: 1rem;
+			li {
+				font-size: 1rem;
+			}
+		}
+
+		.visuals {
+			iframe {
+				width: 300px;
+			}
+		}
+	}
+	@media (max-width: 935px) {
+		.visuals {
+			flex-direction: column;
 		}
 	}
 }

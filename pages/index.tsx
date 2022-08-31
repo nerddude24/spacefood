@@ -6,11 +6,7 @@ const Home: NextPage = () => {
 	return (
 		<div className={styles.home}>
 			<section className={styles.Banner}>
-				<h1>
-					The shittiest food from space.
-					
-				</h1>
-  
+				<h1>The drippiest food from space.</h1>
 				<Link href="/recipes">
 					<a className={styles.Link}>Start Browsing!</a>
 				</Link>
